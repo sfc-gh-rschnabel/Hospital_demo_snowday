@@ -57,7 +57,7 @@ SELECT
     vs.alert_count
 FROM ANALYTICS.V_PATIENT_VITALS_SUMMARY vs
 LEFT JOIN RAW_DATA.HOSPITAL_DEPARTMENTS_RAW d 
-    ON vs.department_code = d.department_code;
+    ON vs.department_code = d.department_id;
 
 -- =============================================================================
 -- STEP 2: Create a comprehensive semantic view combining all hospital data
@@ -173,6 +173,9 @@ SELECT
 FROM ANALYTICS.V_PATIENT_VITALS_SUMMARY
 GROUP BY department_code
 ORDER BY avg_risk_score DESC;
+
+
+
 
 -- Critical alerts breakdown
 SELECT 
