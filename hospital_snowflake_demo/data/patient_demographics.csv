@@ -1,0 +1,21 @@
+patient_id,first_name,last_name,date_of_birth,gender,address,city,state,zip_code,phone,email,insurance_provider,emergency_contact_name,emergency_contact_phone
+PAT001,John,Smith,1975-03-15,M,123 Main St,Boston,MA,02101,555-0101,john.smith@email.com,Blue Cross,Mary Smith,555-0102
+PAT002,Sarah,Johnson,1982-07-22,F,456 Oak Ave,Boston,MA,02102,555-0201,sarah.j@email.com,Aetna,Mike Johnson,555-0202
+PAT003,Michael,Brown,1968-11-08,M,789 Pine St,Cambridge,MA,02139,555-0301,m.brown@email.com,Cigna,Lisa Brown,555-0302
+PAT004,Emily,Davis,1990-02-14,F,321 Elm Dr,Somerville,MA,02143,555-0401,emily.davis@email.com,United Healthcare,Tom Davis,555-0402
+PAT005,Robert,Wilson,1955-09-30,M,654 Maple Ln,Newton,MA,02458,555-0501,r.wilson@email.com,Medicare,Helen Wilson,555-0502
+PAT006,Jennifer,Garcia,1978-12-03,F,987 Cedar St,Brookline,MA,02446,555-0601,jen.garcia@email.com,Blue Cross,Carlos Garcia,555-0602
+PAT007,David,Martinez,1985-06-18,M,147 Birch Ave,Quincy,MA,02169,555-0701,d.martinez@email.com,Medicaid,Rosa Martinez,555-0702
+PAT008,Lisa,Anderson,1972-04-25,F,258 Spruce Dr,Waltham,MA,02451,555-0801,lisa.a@email.com,Aetna,Paul Anderson,555-0802
+PAT009,James,Taylor,1963-01-12,M,369 Willow St,Lexington,MA,02421,555-0901,james.taylor@email.com,Cigna,Nancy Taylor,555-0902
+PAT010,Maria,Rodriguez,1987-08-07,F,741 Poplar Rd,Medford,MA,02155,555-1001,maria.r@email.com,United Healthcare,Juan Rodriguez,555-1002
+PAT011,Christopher,Lee,1979-10-19,M,852 Ash St,Arlington,MA,02474,555-1101,chris.lee@email.com,Blue Cross,Susan Lee,555-1102
+PAT012,Amanda,White,1992-05-28,F,963 Hickory Ave,Belmont,MA,02478,555-1201,amanda.w@email.com,Aetna,Mark White,555-1202
+PAT013,Daniel,Harris,1966-03-11,M,159 Chestnut Dr,Watertown,MA,02472,555-1301,dan.harris@email.com,Medicare,Carol Harris,555-1302
+PAT014,Michelle,Clark,1983-09-16,F,357 Sycamore Ln,Malden,MA,02148,555-1401,michelle.c@email.com,Cigna,Steve Clark,555-1402
+PAT015,Kevin,Lewis,1974-12-29,M,468 Dogwood St,Everett,MA,02149,555-1501,kevin.lewis@email.com,United Healthcare,Linda Lewis,555-1502
+PAT016,Rachel,Walker,1989-07-04,F,579 Magnolia Ave,Revere,MA,02151,555-1601,rachel.w@email.com,Blue Cross,Greg Walker,555-1602
+PAT017,Thomas,Hall,1958-02-21,M,681 Redwood Dr,Chelsea,MA,02150,555-1701,tom.hall@email.com,Medicare,Betty Hall,555-1702
+PAT018,Nicole,Allen,1981-11-13,F,792 Cypress St,Winthrop,MA,02152,555-1801,nicole.a@email.com,Medicaid,Brian Allen,555-1802
+PAT019,Matthew,Young,1976-08-26,M,814 Juniper Ln,Lynn,MA,01901,555-1901,matt.young@email.com,Aetna,Kelly Young,555-1902
+PAT020,Stephanie,King,1988-04-09,F,925 Fir Ave,Nahant,MA,01908,555-2001,stephanie.k@email.com,Cigna,Ryan King,555-2002

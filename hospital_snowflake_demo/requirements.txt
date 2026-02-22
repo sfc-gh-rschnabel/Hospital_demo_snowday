@@ -1,0 +1,9 @@
+# Requirements for Snowflake Native Streamlit
+# Note: These packages are pre-installed in Snowflake Streamlit environment
+# No additional installation required when running in Snowflake
+
+# For local development only (not needed in Snowflake):
+# streamlit
+# pandas  
+# plotly
+# snowflake-snowpark-python

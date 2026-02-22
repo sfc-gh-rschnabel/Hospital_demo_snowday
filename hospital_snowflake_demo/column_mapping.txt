@@ -1,0 +1,64 @@
+ACTUAL COLUMN NAMES FROM DIMENSIONAL MODEL:
+
+FACT_ADMISSIONS:
+- admission_key, admission_id, patient_key, department_key, physician_key, weather_key
+- admission_date_key, admission_time_key, discharge_date_key, discharge_time_key
+- admission_type, chief_complaint, diagnosis_primary, diagnosis_secondary
+- room_number, bed_number, insurance_authorization
+- total_charges, length_of_stay_days, length_of_stay_hours
+- is_emergency, is_readmission, created_timestamp
+
+FACT_PROCEDURES:
+- procedure_fact_key, procedure_id, admission_key, patient_key, procedure_key, physician_key
+- procedure_date_key, procedure_time_key
+- procedure_duration_minutes, procedure_cost, anesthesia_type, complications
+- is_successful, created_timestamp
+
+FACT_BED_OCCUPANCY:
+- bed_occupancy_key, bed_key, patient_key, date_key, bed_status_key, department_key
+- booking_id, occupancy_date, check_in_time, check_out_time
+- planned_checkout_date, actual_checkout_date, total_nights
+- nightly_rate, total_bed_charges, special_requirements
+- is_occupied, is_overdue, created_timestamp
+
+FACT_BED_AVAILABILITY:
+- bed_availability_key, bed_key, date_key, department_key
+- availability_date, status
+- is_available, is_maintenance, is_occupied, reserved_until
+- utilization_rate, revenue_potential, last_updated, created_timestamp
+
+DIM_PATIENT:
+- patient_key, patient_id, first_name, last_name, full_name
+- date_of_birth, age, age_group, gender
+- address, city, state, zip_code, insurance_provider
+- effective_date, end_date, is_current, created_timestamp, updated_timestamp
+
+DIM_DEPARTMENT:
+- department_key, department_id, department_name, department_head
+- location_floor, phone_extension, budget_annual, staff_count
+- bed_capacity, specialization_type, created_timestamp
+
+DIM_PHYSICIAN:
+- physician_key, physician_name, specialty, created_timestamp
+
+DIM_PROCEDURE:
+- procedure_key, procedure_code, procedure_name, procedure_category
+- is_surgical, created_timestamp
+
+DIM_BED:
+- bed_key, bed_id, department_id, room_number, bed_number
+- bed_type, equipment, is_active, daily_rate, created_timestamp
+
+DIM_BED_STATUS:
+- bed_status_key, status_name, status_category, is_billable, created_timestamp
+
+DIM_DATE:
+- date_key, date_value, year, quarter, month, month_name
+- week, day_of_year, day_of_month, day_of_week, day_name
+- is_weekend, is_holiday, season
+
+DIM_TIME:
+- time_key, time_value, hour, minute, hour_period, shift, is_business_hours
+
+DIM_WEATHER:
+- weather_key, weather_condition, temperature_range, season, created_timestamp

@@ -1,0 +1,93 @@
+inventory_id,medication_code,medication_name,medication_class,therapeutic_category,dosage_form,strength,unit_cost,lot_number,expiration_date,quantity_on_hand,reorder_level,supplier,storage_location
+INV000001,MED001,Lisinopril,ACE Inhibitor,Cardiovascular,Tablet,10mg,15.5,LOT000001,2028-02-22,170,48,Morris & Dickson,Shelf-9-D
+INV000002,MED001,Lisinopril,ACE Inhibitor,Cardiovascular,Tablet,10mg,15.5,LOT000002,2028-04-22,138,15,Cardinal Health,Shelf-8-B
+INV000003,MED002,Metformin,Antidiabetic,Endocrine,Tablet,500mg,12.25,LOT000003,2028-05-19,399,36,McKesson,Shelf-11-C
+INV000004,MED002,Metformin,Antidiabetic,Endocrine,Tablet,500mg,12.25,LOT000004,2027-06-10,366,36,Morris & Dickson,Shelf-16-B
+INV000005,MED002,Metformin,Antidiabetic,Endocrine,Tablet,500mg,12.25,LOT000005,2028-09-15,357,11,AmerisourceBergen,Shelf-19-C
+INV000006,MED002,Metformin,Antidiabetic,Endocrine,Tablet,500mg,12.25,LOT000006,2028-01-17,334,15,AmerisourceBergen,Shelf-1-B
+INV000007,MED002,Metformin,Antidiabetic,Endocrine,Tablet,500mg,12.25,LOT000007,2028-05-16,144,26,Cardinal Health,Shelf-2-C
+INV000008,MED003,Atorvastatin,Statin,Cardiovascular,Tablet,20mg,28.75,LOT000008,2026-12-01,280,11,Morris & Dickson,Shelf-4-D
+INV000009,MED003,Atorvastatin,Statin,Cardiovascular,Tablet,20mg,28.75,LOT000009,2027-08-18,326,26,Cardinal Health,Shelf-14-B
+INV000010,MED003,Atorvastatin,Statin,Cardiovascular,Tablet,20mg,28.75,LOT000010,2027-02-27,367,10,Cardinal Health,Shelf-20-B
+INV000011,MED003,Atorvastatin,Statin,Cardiovascular,Tablet,20mg,28.75,LOT000011,2027-02-08,140,35,AmerisourceBergen,Shelf-11-D
+INV000012,MED003,Atorvastatin,Statin,Cardiovascular,Tablet,20mg,28.75,LOT000012,2027-05-20,406,45,McKesson,Shelf-2-C
+INV000013,MED003,Atorvastatin,Statin,Cardiovascular,Tablet,20mg,28.75,LOT000013,2027-12-24,53,12,Morris & Dickson,Shelf-1-D
+INV000014,MED004,Omeprazole,Proton Pump Inhibitor,Gastrointestinal,Capsule,20mg,22.0,LOT000014,2027-04-17,384,22,AmerisourceBergen,Shelf-10-B
+INV000015,MED004,Omeprazole,Proton Pump Inhibitor,Gastrointestinal,Capsule,20mg,22.0,LOT000015,2027-02-25,173,48,Cardinal Health,Shelf-10-B
+INV000016,MED004,Omeprazole,Proton Pump Inhibitor,Gastrointestinal,Capsule,20mg,22.0,LOT000016,2027-11-24,183,25,Cardinal Health,Shelf-14-C
+INV000017,MED004,Omeprazole,Proton Pump Inhibitor,Gastrointestinal,Capsule,20mg,22.0,LOT000017,2026-08-18,348,41,AmerisourceBergen,Shelf-16-A
+INV000018,MED004,Omeprazole,Proton Pump Inhibitor,Gastrointestinal,Capsule,20mg,22.0,LOT000018,2028-02-18,374,15,AmerisourceBergen,Shelf-10-D
+INV000019,MED004,Omeprazole,Proton Pump Inhibitor,Gastrointestinal,Capsule,20mg,22.0,LOT000019,2027-05-17,244,14,McKesson,Shelf-14-A
+INV000020,MED004,Omeprazole,Proton Pump Inhibitor,Gastrointestinal,Capsule,20mg,22.0,LOT000020,2028-01-21,476,43,Cardinal Health,Shelf-14-A
+INV000021,MED005,Amlodipine,Calcium Channel Blocker,Cardiovascular,Tablet,5mg,18.5,LOT000021,2027-10-01,261,45,Cardinal Health,Shelf-18-D
+INV000022,MED005,Amlodipine,Calcium Channel Blocker,Cardiovascular,Tablet,5mg,18.5,LOT000022,2026-11-22,180,43,McKesson,Shelf-3-D
+INV000023,MED005,Amlodipine,Calcium Channel Blocker,Cardiovascular,Tablet,5mg,18.5,LOT000023,2027-08-12,200,25,Morris & Dickson,Shelf-8-C
+INV000024,MED005,Amlodipine,Calcium Channel Blocker,Cardiovascular,Tablet,5mg,18.5,LOT000024,2027-09-25,151,18,AmerisourceBergen,Shelf-11-C
+INV000025,MED005,Amlodipine,Calcium Channel Blocker,Cardiovascular,Tablet,5mg,18.5,LOT000025,2027-09-05,123,50,Cardinal Health,Shelf-20-D
+INV000026,MED005,Amlodipine,Calcium Channel Blocker,Cardiovascular,Tablet,5mg,18.5,LOT000026,2027-02-17,344,27,AmerisourceBergen,Shelf-20-C
+INV000027,MED005,Amlodipine,Calcium Channel Blocker,Cardiovascular,Tablet,5mg,18.5,LOT000027,2027-05-05,155,44,McKesson,Shelf-3-B
+INV000028,MED006,Simvastatin,Statin,Cardiovascular,Tablet,40mg,25.75,LOT000028,2027-07-30,126,25,McKesson,Shelf-11-B
+INV000029,MED006,Simvastatin,Statin,Cardiovascular,Tablet,40mg,25.75,LOT000029,2026-09-21,215,26,Cardinal Health,Shelf-4-D
+INV000030,MED006,Simvastatin,Statin,Cardiovascular,Tablet,40mg,25.75,LOT000030,2026-05-27,411,33,Morris & Dickson,Shelf-11-C
+INV000031,MED006,Simvastatin,Statin,Cardiovascular,Tablet,40mg,25.75,LOT000031,2027-06-20,168,13,Morris & Dickson,Shelf-10-C
+INV000032,MED006,Simvastatin,Statin,Cardiovascular,Tablet,40mg,25.75,LOT000032,2026-11-13,130,36,AmerisourceBergen,Shelf-5-C
+INV000033,MED006,Simvastatin,Statin,Cardiovascular,Tablet,40mg,25.75,LOT000033,2026-11-26,190,25,Cardinal Health,Shelf-6-C
+INV000034,MED006,Simvastatin,Statin,Cardiovascular,Tablet,40mg,25.75,LOT000034,2028-02-27,426,45,AmerisourceBergen,Shelf-3-C
+INV000035,MED007,Levothyroxine,Thyroid Hormone,Endocrine,Tablet,50mcg,35.25,LOT000035,2027-03-01,130,35,Cardinal Health,Shelf-14-B
+INV000036,MED007,Levothyroxine,Thyroid Hormone,Endocrine,Tablet,50mcg,35.25,LOT000036,2027-02-09,283,18,AmerisourceBergen,Shelf-11-B
+INV000037,MED007,Levothyroxine,Thyroid Hormone,Endocrine,Tablet,50mcg,35.25,LOT000037,2027-01-26,302,39,AmerisourceBergen,Shelf-14-D
+INV000038,MED007,Levothyroxine,Thyroid Hormone,Endocrine,Tablet,50mcg,35.25,LOT000038,2027-09-11,353,15,McKesson,Shelf-14-B
+INV000039,MED008,Azithromycin,Antibiotic,Anti-Infective,Tablet,250mg,45.0,LOT000039,2026-12-25,197,35,McKesson,Shelf-7-D
+INV000040,MED008,Azithromycin,Antibiotic,Anti-Infective,Tablet,250mg,45.0,LOT000040,2026-08-10,459,50,Cardinal Health,Shelf-9-A
+INV000041,MED008,Azithromycin,Antibiotic,Anti-Infective,Tablet,250mg,45.0,LOT000041,2026-12-16,471,25,Morris & Dickson,Shelf-6-B
+INV000042,MED008,Azithromycin,Antibiotic,Anti-Infective,Tablet,250mg,45.0,LOT000042,2027-05-13,82,10,Cardinal Health,Shelf-4-B
+INV000043,MED009,Prednisone,Corticosteroid,Anti-Inflammatory,Tablet,10mg,20.5,LOT000043,2028-02-25,466,10,Cardinal Health,Shelf-19-A
+INV000044,MED009,Prednisone,Corticosteroid,Anti-Inflammatory,Tablet,10mg,20.5,LOT000044,2027-09-06,232,31,Morris & Dickson,Shelf-12-C
+INV000045,MED009,Prednisone,Corticosteroid,Anti-Inflammatory,Tablet,10mg,20.5,LOT000045,2028-04-24,277,29,Cardinal Health,Shelf-2-B
+INV000046,MED009,Prednisone,Corticosteroid,Anti-Inflammatory,Tablet,10mg,20.5,LOT000046,2027-05-12,108,49,McKesson,Shelf-14-C
+INV000047,MED009,Prednisone,Corticosteroid,Anti-Inflammatory,Tablet,10mg,20.5,LOT000047,2027-09-07,347,17,McKesson,Shelf-4-C
+INV000048,MED009,Prednisone,Corticosteroid,Anti-Inflammatory,Tablet,10mg,20.5,LOT000048,2026-07-09,411,35,Morris & Dickson,Shelf-9-C
+INV000049,MED009,Prednisone,Corticosteroid,Anti-Inflammatory,Tablet,10mg,20.5,LOT000049,2027-04-11,288,46,McKesson,Shelf-20-D
+INV000050,MED010,Warfarin,Anticoagulant,Cardiovascular,Tablet,5mg,32.75,LOT000050,2028-09-13,173,38,McKesson,Shelf-8-B
+INV000051,MED010,Warfarin,Anticoagulant,Cardiovascular,Tablet,5mg,32.75,LOT000051,2026-08-23,380,16,AmerisourceBergen,Shelf-2-C
+INV000052,MED010,Warfarin,Anticoagulant,Cardiovascular,Tablet,5mg,32.75,LOT000052,2026-12-11,398,24,Cardinal Health,Shelf-2-B
+INV000053,MED010,Warfarin,Anticoagulant,Cardiovascular,Tablet,5mg,32.75,LOT000053,2028-04-01,312,36,McKesson,Shelf-15-D
+INV000054,MED011,Insulin Glargine,Long-Acting Insulin,Endocrine,Injection,100units/mL,125.0,LOT000054,2027-11-17,347,39,AmerisourceBergen,Shelf-20-B
+INV000055,MED011,Insulin Glargine,Long-Acting Insulin,Endocrine,Injection,100units/mL,125.0,LOT000055,2028-09-15,298,50,McKesson,Shelf-11-A
+INV000056,MED012,Morphine,Opioid Analgesic,Pain Management,Injection,10mg/mL,85.5,LOT000056,2027-03-25,282,37,AmerisourceBergen,Shelf-8-C
+INV000057,MED012,Morphine,Opioid Analgesic,Pain Management,Injection,10mg/mL,85.5,LOT000057,2028-01-14,137,10,Morris & Dickson,Shelf-20-B
+INV000058,MED012,Morphine,Opioid Analgesic,Pain Management,Injection,10mg/mL,85.5,LOT000058,2028-08-12,131,40,McKesson,Shelf-9-B
+INV000059,MED013,Furosemide,Loop Diuretic,Cardiovascular,Tablet,40mg,16.25,LOT000059,2028-03-01,105,38,Cardinal Health,Shelf-12-D
+INV000060,MED013,Furosemide,Loop Diuretic,Cardiovascular,Tablet,40mg,16.25,LOT000060,2027-12-14,311,12,Cardinal Health,Shelf-6-D
+INV000061,MED014,Hydrocodone,Opioid Analgesic,Pain Management,Tablet,5mg,55.75,LOT000061,2028-08-04,209,18,Morris & Dickson,Shelf-17-A
+INV000062,MED014,Hydrocodone,Opioid Analgesic,Pain Management,Tablet,5mg,55.75,LOT000062,2028-05-22,361,29,Cardinal Health,Shelf-3-C
+INV000063,MED014,Hydrocodone,Opioid Analgesic,Pain Management,Tablet,5mg,55.75,LOT000063,2028-01-02,423,39,Cardinal Health,Shelf-13-A
+INV000064,MED014,Hydrocodone,Opioid Analgesic,Pain Management,Tablet,5mg,55.75,LOT000064,2027-07-28,393,29,Cardinal Health,Shelf-6-D
+INV000065,MED014,Hydrocodone,Opioid Analgesic,Pain Management,Tablet,5mg,55.75,LOT000065,2027-11-18,493,32,Morris & Dickson,Shelf-1-D
+INV000066,MED014,Hydrocodone,Opioid Analgesic,Pain Management,Tablet,5mg,55.75,LOT000066,2026-05-23,299,16,McKesson,Shelf-6-A
+INV000067,MED015,Sertraline,SSRI Antidepressant,Psychiatric,Tablet,50mg,42.0,LOT000067,2027-04-12,158,24,Morris & Dickson,Shelf-7-A
+INV000068,MED015,Sertraline,SSRI Antidepressant,Psychiatric,Tablet,50mg,42.0,LOT000068,2028-04-14,190,30,Morris & Dickson,Shelf-14-B
+INV000069,MED016,Gabapentin,Anticonvulsant,Neurological,Capsule,300mg,38.25,LOT000069,2027-10-22,421,11,Morris & Dickson,Shelf-2-A
+INV000070,MED016,Gabapentin,Anticonvulsant,Neurological,Capsule,300mg,38.25,LOT000070,2027-05-15,178,44,McKesson,Shelf-15-A
+INV000071,MED016,Gabapentin,Anticonvulsant,Neurological,Capsule,300mg,38.25,LOT000071,2028-04-15,345,41,Cardinal Health,Shelf-4-C
+INV000072,MED016,Gabapentin,Anticonvulsant,Neurological,Capsule,300mg,38.25,LOT000072,2026-12-08,100,16,Morris & Dickson,Shelf-6-C
+INV000073,MED016,Gabapentin,Anticonvulsant,Neurological,Capsule,300mg,38.25,LOT000073,2028-02-28,163,44,Morris & Dickson,Shelf-15-B
+INV000074,MED016,Gabapentin,Anticonvulsant,Neurological,Capsule,300mg,38.25,LOT000074,2027-01-12,299,14,McKesson,Shelf-18-D
+INV000075,MED016,Gabapentin,Anticonvulsant,Neurological,Capsule,300mg,38.25,LOT000075,2026-12-05,266,27,McKesson,Shelf-1-A
+INV000076,MED017,Clopidogrel,Antiplatelet,Cardiovascular,Tablet,75mg,65.5,LOT000076,2026-04-02,97,26,AmerisourceBergen,Shelf-14-B
+INV000077,MED017,Clopidogrel,Antiplatelet,Cardiovascular,Tablet,75mg,65.5,LOT000077,2027-10-18,325,16,Cardinal Health,Shelf-8-A
+INV000078,MED017,Clopidogrel,Antiplatelet,Cardiovascular,Tablet,75mg,65.5,LOT000078,2026-11-06,419,30,McKesson,Shelf-19-C
+INV000079,MED017,Clopidogrel,Antiplatelet,Cardiovascular,Tablet,75mg,65.5,LOT000079,2027-12-05,150,14,AmerisourceBergen,Shelf-19-A
+INV000080,MED018,Metoprolol,Beta Blocker,Cardiovascular,Tablet,50mg,19.75,LOT000080,2026-10-14,249,12,McKesson,Shelf-20-A
+INV000081,MED018,Metoprolol,Beta Blocker,Cardiovascular,Tablet,50mg,19.75,LOT000081,2028-09-25,463,12,McKesson,Shelf-4-D
+INV000082,MED018,Metoprolol,Beta Blocker,Cardiovascular,Tablet,50mg,19.75,LOT000082,2026-09-20,238,39,Morris & Dickson,Shelf-10-D
+INV000083,MED018,Metoprolol,Beta Blocker,Cardiovascular,Tablet,50mg,19.75,LOT000083,2026-10-04,413,43,Morris & Dickson,Shelf-7-B
+INV000084,MED019,Pantoprazole,Proton Pump Inhibitor,Gastrointestinal,Tablet,40mg,28.0,LOT000084,2026-11-26,258,26,McKesson,Shelf-13-C
+INV000085,MED019,Pantoprazole,Proton Pump Inhibitor,Gastrointestinal,Tablet,40mg,28.0,LOT000085,2028-08-27,135,47,Cardinal Health,Shelf-12-C
+INV000086,MED020,Tramadol,Analgesic,Pain Management,Tablet,50mg,33.5,LOT000086,2028-07-30,288,42,Cardinal Health,Shelf-15-A
+INV000087,MED020,Tramadol,Analgesic,Pain Management,Tablet,50mg,33.5,LOT000087,2028-08-30,440,25,Cardinal Health,Shelf-7-A
+INV000088,MED020,Tramadol,Analgesic,Pain Management,Tablet,50mg,33.5,LOT000088,2028-07-23,306,20,Cardinal Health,Shelf-14-D
+INV000089,MED020,Tramadol,Analgesic,Pain Management,Tablet,50mg,33.5,LOT000089,2028-08-31,248,30,McKesson,Shelf-8-C
+INV000090,MED020,Tramadol,Analgesic,Pain Management,Tablet,50mg,33.5,LOT000090,2027-10-02,238,14,AmerisourceBergen,Shelf-15-A
+INV000091,MED020,Tramadol,Analgesic,Pain Management,Tablet,50mg,33.5,LOT000091,2028-04-03,498,42,Morris & Dickson,Shelf-14-C
+INV000092,MED020,Tramadol,Analgesic,Pain Management,Tablet,50mg,33.5,LOT000092,2027-08-07,397,23,AmerisourceBergen,Shelf-11-D

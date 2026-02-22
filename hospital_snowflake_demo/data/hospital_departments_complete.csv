@@ -1,0 +1,22 @@
+department_id,department_name,department_head,location_floor,phone_extension,budget_annual,staff_count,bed_capacity,specialization_type
+CARD,Cardiology,Dr. Sarah Chen,2,2201,2500000,25,30,Cardiac Care
+EMER,Emergency Department,Dr. Michael Torres,1,1101,3200000,45,15,Emergency Medicine
+ORTH,Orthopedics,Dr. Jennifer Park,3,3301,1800000,20,25,Bone and Joint
+OBGY,Obstetrics & Gynecology,Dr. Amanda Rodriguez,4,4401,2100000,30,20,Women's Health
+NEUR,Neurology,Dr. Robert Kim,5,5501,2800000,22,20,Neurological Care
+GAST,Gastroenterology,Dr. Lisa Wang,3,3302,1600000,18,15,Digestive Health
+PEDI,Pediatrics,Dr. Mark Thompson,2,2202,2200000,28,25,Child Care
+ONCO,Oncology,Dr. Patricia Davis,4,4402,3500000,35,20,Cancer Treatment
+PSYC,Psychiatry,Dr. James Wilson,1,1102,1400000,15,10,Mental Health
+RADI,Radiology,Dr. Maria Gonzalez,B1,0101,2000000,20,0,Medical Imaging
+PULM,Pulmonology,Dr. David Lee,3,3303,1900000,20,18,Respiratory Care
+ENDO,Endocrinology,Dr. Susan Miller,2,2203,1700000,15,12,Hormonal Disorders
+DERM,Dermatology,Dr. Kevin Brown,1,1103,1300000,12,8,Skin Care
+UROL,Urology,Dr. Rachel Green,3,3304,1650000,18,16,Urinary System
+RHEU,Rheumatology,Dr. Thomas White,2,2204,1450000,14,10,Joint Disorders
+PHAR,Pharmacy,Dr. Michelle Adams,B1,0102,1200000,25,0,Medication Management
+PHYS,Physical Therapy,Sarah Johnson PT,1,1104,900000,20,0,Rehabilitation
+OCCU,Occupational Therapy,Mark Thompson OT,1,1105,800000,15,0,Occupational Health
+RESP,Respiratory Therapy,Lisa Chen RRT,2,2205,750000,18,0,Breathing Support
+NUTR,Nutrition Services,Jennifer Martinez RD,1,1106,600000,12,0,Dietary Services
+SOCI,Social Services,David Kim MSW,1,1107,500000,8,0,Patient Support

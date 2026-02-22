@@ -1,0 +1,21 @@
+procedure_id,admission_id,procedure_code,procedure_name,procedure_date,procedure_time,performing_physician,procedure_duration_minutes,procedure_cost,anesthesia_type,complications,procedure_notes
+PROC001,ADM001,92928,Cardiac Catheterization,2024-01-15,10:30:00,Dr. Sarah Chen,90,8500.00,Local,None,Successful procedure
+PROC002,ADM001,92982,Percutaneous Coronary Intervention,2024-01-15,12:15:00,Dr. Sarah Chen,120,12000.00,Local,None,Stent placed successfully
+PROC003,ADM003,27447,Total Knee Replacement,2024-01-19,08:00:00,Dr. Jennifer Park,180,25000.00,General,None,Excellent outcome
+PROC004,ADM004,59400,Vaginal Delivery,2024-01-20,22:30:00,Dr. Amanda Rodriguez,240,8000.00,Epidural,None,Normal delivery
+PROC005,ADM007,61533,Craniotomy for Seizure Focus,2024-01-29,09:00:00,Dr. Robert Kim,300,35000.00,General,Minor bleeding,Successful resection
+PROC006,ADM008,47562,Laparoscopic Cholecystectomy,2024-02-03,10:30:00,Dr. Lisa Wang,90,12500.00,General,None,Uncomplicated
+PROC007,ADM011,27130,Total Hip Replacement,2024-02-13,07:30:00,Dr. Jennifer Park,210,28000.00,General,None,Excellent alignment
+PROC008,ADM013,61624,Mechanical Thrombectomy,2024-02-19,14:45:00,Dr. Robert Kim,150,25000.00,General,None,Successful recanalization
+PROC009,ADM014,49505,Inguinal Hernia Repair,2024-02-23,11:00:00,Dr. Lisa Wang,75,6500.00,Local,None,Mesh placement successful
+PROC010,ADM016,59510,Cesarean Section,2024-03-01,16:20:00,Dr. Amanda Rodriguez,60,10000.00,Spinal,None,Healthy delivery
+PROC011,ADM019,25500,Closed Reduction of Radius Fracture,2024-03-11,09:15:00,Dr. Jennifer Park,45,3200.00,Local,None,Good alignment achieved
+PROC012,ADM021,92928,Cardiac Catheterization,2024-03-16,11:30:00,Dr. Sarah Chen,75,8500.00,Local,None,Follow-up procedure
+PROC013,ADM023,61760,Stereotactic Radiosurgery,2024-03-23,13:00:00,Dr. Robert Kim,120,18000.00,Local,None,Targeted treatment
+PROC014,ADM025,92982,Primary PCI for STEMI,2024-03-29,02:15:00,Dr. Sarah Chen,90,15000.00,Local,None,Emergency intervention
+PROC015,ADM002,70450,CT Head without Contrast,2024-01-16,13:30:00,Dr. Maria Gonzalez,15,1200.00,None,None,Normal findings
+PROC016,ADM005,93000,Electrocardiogram,2024-01-22,17:00:00,Dr. Sarah Chen,10,250.00,None,None,Abnormal rhythm
+PROC017,ADM006,95117,Allergy Testing,2024-01-25,08:30:00,Dr. Michael Torres,30,450.00,None,None,Multiple allergens identified
+PROC018,ADM009,93306,Echocardiogram,2024-02-06,14:20:00,Dr. Sarah Chen,45,800.00,None,None,Reduced ejection fraction
+PROC019,ADM012,70470,CT Head with Contrast,2024-02-15,18:45:00,Dr. Maria Gonzalez,20,1800.00,None,None,Mild concussion
+PROC020,ADM018,80307,Drug Screen,2024-03-07,09:00:00,Dr. Michael Torres,5,150.00,None,None,Multiple substances detected

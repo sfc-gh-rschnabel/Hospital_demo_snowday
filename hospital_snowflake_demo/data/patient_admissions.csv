@@ -1,0 +1,26 @@
+admission_id,patient_id,admission_date,admission_time,discharge_date,discharge_time,department_id,admission_type,chief_complaint,diagnosis_primary,diagnosis_secondary,attending_physician,room_number,bed_number,insurance_authorization,total_charges,weather_condition,temperature_f
+ADM001,PAT001,2024-01-15,08:30:00,2024-01-17,14:20:00,CARD,Emergency,Chest Pain,Myocardial Infarction,Hypertension,Dr. Sarah Chen,201,A,AUTH12345,15750.00,Snowy,28
+ADM002,PAT002,2024-01-16,12:45:00,2024-01-16,18:30:00,EMER,Emergency,Severe Headache,Migraine,NULL,Dr. Michael Torres,NULL,NULL,AUTH12346,890.00,Cloudy,35
+ADM003,PAT003,2024-01-18,09:15:00,2024-01-22,11:00:00,ORTH,Elective,Knee Replacement,Osteoarthritis,NULL,Dr. Jennifer Park,305,B,AUTH12347,28500.00,Sunny,42
+ADM004,PAT004,2024-01-20,14:20:00,2024-01-21,10:15:00,OBGY,Emergency,Labor Pains,Normal Delivery,NULL,Dr. Amanda Rodriguez,401,A,AUTH12348,12200.00,Rainy,39
+ADM005,PAT005,2024-01-22,16:40:00,2024-01-25,09:30:00,CARD,Emergency,Shortness of Breath,Congestive Heart Failure,Diabetes,Dr. Sarah Chen,203,B,AUTH12349,18900.00,Cloudy,33
+ADM006,PAT006,2024-01-25,07:50:00,2024-01-25,15:45:00,EMER,Emergency,Allergic Reaction,Anaphylaxis,NULL,Dr. Michael Torres,NULL,NULL,AUTH12350,1250.00,Sunny,45
+ADM007,PAT007,2024-01-28,11:30:00,2024-02-01,13:20:00,NEUR,Emergency,Seizure,Epilepsy,NULL,Dr. Robert Kim,502,A,AUTH12351,22100.00,Snowy,25
+ADM008,PAT008,2024-02-02,13:15:00,2024-02-04,16:10:00,GAST,Elective,Abdominal Pain,Gallbladder Surgery,NULL,Dr. Lisa Wang,301,B,AUTH12352,16800.00,Cloudy,31
+ADM009,PAT009,2024-02-05,10:25:00,2024-02-08,12:40:00,CARD,Emergency,Heart Palpitations,Atrial Fibrillation,Hypertension,Dr. Sarah Chen,205,A,AUTH12353,19500.00,Rainy,37
+ADM010,PAT010,2024-02-08,15:30:00,2024-02-09,11:20:00,OBGY,Emergency,Pregnancy Complications,Preeclampsia,NULL,Dr. Amanda Rodriguez,403,B,AUTH12354,8900.00,Sunny,48
+ADM011,PAT011,2024-02-12,08:45:00,2024-02-15,14:30:00,ORTH,Elective,Hip Replacement,Hip Fracture,Osteoporosis,Dr. Jennifer Park,307,A,AUTH12355,32100.00,Cloudy,41
+ADM012,PAT012,2024-02-15,17:20:00,2024-02-16,09:15:00,EMER,Emergency,Motor Vehicle Accident,Concussion,Lacerations,Dr. Michael Torres,NULL,NULL,AUTH12356,3400.00,Snowy,29
+ADM013,PAT013,2024-02-18,12:10:00,2024-02-21,15:45:00,NEUR,Emergency,Stroke Symptoms,Ischemic Stroke,Diabetes,Dr. Robert Kim,504,B,AUTH12357,28700.00,Rainy,34
+ADM014,PAT014,2024-02-22,09:35:00,2024-02-24,11:50:00,GAST,Elective,Hernia Repair,Inguinal Hernia,NULL,Dr. Lisa Wang,303,A,AUTH12358,14200.00,Sunny,52
+ADM015,PAT015,2024-02-25,14:15:00,2024-02-27,16:30:00,CARD,Emergency,Chest Pain,Angina,Hyperlipidemia,Dr. Sarah Chen,207,B,AUTH12359,11800.00,Cloudy,44
+ADM016,PAT016,2024-02-28,11:40:00,2024-03-02,13:25:00,OBGY,Elective,C-Section,Planned Cesarean,NULL,Dr. Amanda Rodriguez,405,A,AUTH12360,15600.00,Rainy,38
+ADM017,PAT017,2024-03-03,16:50:00,2024-03-06,10:20:00,NEUR,Emergency,Memory Loss,Dementia,Hypertension,Dr. Robert Kim,506,B,AUTH12361,16900.00,Snowy,27
+ADM018,PAT018,2024-03-07,08:20:00,2024-03-08,14:40:00,EMER,Emergency,Drug Overdose,Substance Abuse,Depression,Dr. Michael Torres,NULL,NULL,AUTH12362,2800.00,Cloudy,36
+ADM019,PAT019,2024-03-10,13:25:00,2024-03-13,15:10:00,ORTH,Emergency,Broken Arm,Radius Fracture,NULL,Dr. Jennifer Park,309,A,AUTH12363,8700.00,Sunny,55
+ADM020,PAT020,2024-03-12,10:15:00,2024-03-14,12:30:00,GAST,Emergency,Severe Nausea,Food Poisoning,Dehydration,Dr. Lisa Wang,305,B,AUTH12364,4200.00,Rainy,42
+ADM021,PAT001,2024-03-15,15:45:00,2024-03-17,11:20:00,CARD,Emergency,Follow-up Chest Pain,Unstable Angina,Hypertension,Dr. Sarah Chen,209,A,AUTH12365,13400.00,Cloudy,46
+ADM022,PAT003,2024-03-18,09:30:00,2024-03-20,16:15:00,ORTH,Follow-up,Post-op Check,Knee Replacement Follow-up,NULL,Dr. Jennifer Park,311,B,AUTH12366,2100.00,Sunny,49
+ADM023,PAT007,2024-03-22,12:40:00,2024-03-25,14:50:00,NEUR,Emergency,Seizure Recurrence,Epilepsy,NULL,Dr. Robert Kim,508,A,AUTH12367,18600.00,Snowy,32
+ADM024,PAT011,2024-03-25,07:55:00,2024-03-27,13:35:00,ORTH,Follow-up,Post-op Infection,Surgical Site Infection,NULL,Dr. Jennifer Park,313,B,AUTH12368,7800.00,Rainy,40
+ADM025,PAT015,2024-03-28,14:30:00,2024-03-30,10:45:00,CARD,Emergency,Heart Attack,STEMI,Diabetes,Dr. Sarah Chen,211,A,AUTH12369,24500.00,Cloudy,43

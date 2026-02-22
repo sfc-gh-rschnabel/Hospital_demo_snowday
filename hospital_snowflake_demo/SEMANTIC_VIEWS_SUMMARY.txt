@@ -1,0 +1,224 @@
+╔══════════════════════════════════════════════════════════════════════════╗
+║                SNOWFLAKE SEMANTIC VIEWS - QUEENSLAND HEALTH              ║
+║                     Hospital Demo - Production Ready                     ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+📊 WHAT ARE SNOWFLAKE SEMANTIC VIEWS?
+────────────────────────────────────────────────────────────────────────────
+Semantic views are a new Snowflake feature that stores business concepts
+directly in the database, providing a business-friendly abstraction layer:
+
+  ✅ FACTS      → Row-level attributes (episode_cost, alos_days)
+  ✅ DIMENSIONS → Categorical attributes (specialty, patient_age_category)  
+  ✅ METRICS    → Aggregated KPIs (total_admissions, neat_compliance_rate)
+
+Reference: https://docs.snowflake.com/en/user-guide/views-semantic/overview
+
+🏥 THREE SEMANTIC VIEWS CREATED
+────────────────────────────────────────────────────────────────────────────
+
+1️⃣  SV_QLD_HOSPITAL_ACTIVITY
+   Purpose: Core admitted patient activity with Queensland Health KPIs
+   
+   📈 Key Metrics:
+   • total_admissions - Total hospital admissions
+   • average_length_of_stay_days - ALOS (Queensland Health KPI)
+   • neat_compliance_rate - ED 4-hour target (≥90%)
+   • unplanned_readmission_rate - 28-day readmissions (<10% target)
+   • emergency_presentation_rate - Percentage via ED
+   • total_episode_revenue - Total revenue
+   
+   🏷️  Key Dimensions:
+   • Patient: ur_number, patient_age_category, funding_source
+   • Clinical: specialty, treating_medical_officer, principal_diagnosis
+   • Time: admission_date, admission_month, admission_quarter
+   • Flags: is_emergency_presentation, is_long_stay_patient
+
+────────────────────────────────────────────────────────────────────────────
+
+2️⃣  SV_BED_MANAGEMENT
+   Purpose: Occupied Bed Days (OBD) and Available Bed Days (ABD)
+   
+   📈 Key Metrics:
+   • occupied_bed_days_obd - OBD (AIHW standard)
+   • available_bed_days_abd - ABD capacity
+   • bed_occupancy_rate - OBD/ABD % (85-92% target)
+   • total_beds - Total bed count
+   • bed_days_at_risk - Days over 92% capacity
+   
+   🏷️  Key Dimensions:
+   • Bed: bed_classification, ward_room, bed_equipment
+   • Ward: specialty_ward, ward_bed_complement
+   • Status: bed_status, is_bed_occupied, is_bed_available
+   • Time: service_date, day_of_week, service_month
+
+────────────────────────────────────────────────────────────────────────────
+
+3️⃣  SV_ELECTIVE_SURGERY
+   Purpose: Theatre utilization and elective surgery performance
+   
+   📈 Key Metrics:
+   • total_procedures - Count of surgical procedures
+   • total_theatre_hours - Theatre time utilized
+   • procedure_success_rate - Success rate (≥95% target)
+   • complication_rate - Post-operative complications
+   • average_post_op_los - Post-op length of stay
+   
+   🏷️  Key Dimensions:
+   • Procedure: procedure_description, elective_surgery_category
+   • Theatre: theatre_specialty, operating_surgeon, anaesthetic_type
+   • Time: procedure_date, theatre_shift, weekend_theatre
+   • Outcome: complication_status, procedure_successful
+
+🎯 AUSTRALIAN HEALTHCARE TERMINOLOGY
+────────────────────────────────────────────────────────────────────────────
+All semantic views use authentic Australian health system terms:
+
+  ✅ UR Number (not MRN)
+  ✅ Separation (not discharge)
+  ✅ ALOS - Average Length of Stay
+  ✅ OBD/ABD - Occupied/Available Bed Days
+  ✅ NEAT - National Emergency Access Target (4 hours)
+  ✅ Theatre (not OR)
+  ✅ Anaesthetic (not anesthetic)
+  ✅ Specialty (not department)
+  ✅ Medical Officer / Consultant
+  ✅ Medicare, DVA, NDIS funding sources
+
+🤖 CORTEX ANALYST INTEGRATION
+────────────────────────────────────────────────────────────────────────────
+Semantic views enable natural language queries with Cortex Analyst!
+
+Example Questions:
+  💬 "What is the NEAT compliance rate for ED presentations this month?"
+  💬 "Which specialty has the highest bed occupancy rate this week?"
+  💬 "Show average length of stay by age group for last quarter"
+  💬 "What is theatre utilization for orthopedic surgeons with complication rates?"
+
+Cortex Analyst automatically generates SQL from your semantic views!
+
+📊 BI TOOL INTEGRATION
+────────────────────────────────────────────────────────────────────────────
+Semantic views work seamlessly with:
+
+  ✅ Tableau - Metrics as measures, dimensions as dimensions
+  ✅ Power BI - Pre-calculated metrics for visuals
+  ✅ Looker - LookML integration
+  ✅ Any SQL-compatible BI tool
+
+Benefits:
+  • Consistent metric definitions across all tools
+  • No need to recreate calculations in each tool
+  • Business users see friendly names, not technical columns
+
+📝 EXAMPLE QUERIES
+────────────────────────────────────────────────────────────────────────────
+
+-- Query 1: Overall hospital KPIs
+SELECT 
+    total_admissions,
+    average_length_of_stay_days,
+    neat_compliance_rate,
+    unplanned_readmission_rate
+FROM SV_QLD_HOSPITAL_ACTIVITY
+WHERE admission_financial_year = 2024;
+
+-- Query 2: Bed occupancy by ward
+SELECT 
+    specialty_ward,
+    bed_occupancy_rate,
+    occupied_bed_days_obd,
+    available_bed_days_abd
+FROM SV_BED_MANAGEMENT
+WHERE service_date >= CURRENT_DATE - 7
+GROUP BY specialty_ward
+ORDER BY bed_occupancy_rate DESC;
+
+-- Query 3: Theatre utilization
+SELECT 
+    theatre_specialty,
+    total_procedures,
+    total_theatre_hours,
+    procedure_success_rate
+FROM SV_ELECTIVE_SURGERY
+WHERE procedure_date >= DATE_TRUNC('month', CURRENT_DATE)
+GROUP BY theatre_specialty
+ORDER BY total_theatre_hours DESC;
+
+🎯 QUEENSLAND HEALTH KPI TARGETS
+────────────────────────────────────────────────────────────────────────────
+
+Metric                     | Target    | Description
+──────────────────────────────────────────────────────────────────────────
+NEAT Compliance           | ≥90%      | ED within 4 hours
+ALOS                      | Varies    | Average Length of Stay
+Bed Occupancy             | 85-92%    | Safe occupancy range
+Unplanned Readmissions    | <10%      | 28-day readmissions
+Procedure Success Rate    | ≥95%      | No complications
+
+📚 DOCUMENTATION FILES CREATED
+────────────────────────────────────────────────────────────────────────────
+
+1. sql/11_snowflake_semantic_views.sql
+   • CREATE SEMANTIC VIEW statements
+   • Fact, Dimension, and Metric definitions
+   • Australian healthcare terminology
+   • Example queries
+   • Permission grants
+
+2. SNOWFLAKE_SEMANTIC_VIEWS_GUIDE.md (10KB+)
+   • Complete guide to semantic views
+   • Query examples
+   • Cortex Analyst integration
+   • BI tool setup
+   • Best practices
+
+3. SEMANTIC_VIEWS_SUMMARY.txt (this file)
+   • Quick reference
+   • Key concepts
+   • Examples
+
+🚀 DEPLOYMENT STEPS
+────────────────────────────────────────────────────────────────────────────
+
+1. Ensure dimensional model is loaded (scripts 01-04)
+2. Run: sql/11_snowflake_semantic_views.sql
+3. Grant permissions to appropriate roles
+4. Test queries or integrate with Cortex Analyst
+5. Connect BI tools to semantic views
+
+✅ VERIFICATION COMMANDS
+────────────────────────────────────────────────────────────────────────────
+
+-- Show all semantic views
+SHOW SEMANTIC VIEWS IN SCHEMA ANALYTICS;
+
+-- Describe semantic views
+DESCRIBE SEMANTIC VIEW SV_QLD_HOSPITAL_ACTIVITY;
+
+-- Show metrics
+SHOW SEMANTIC METRICS IN SV_QLD_HOSPITAL_ACTIVITY;
+
+-- Show dimensions  
+SHOW SEMANTIC DIMENSIONS IN SV_QLD_HOSPITAL_ACTIVITY;
+
+-- Test query
+SELECT 
+    total_admissions,
+    average_length_of_stay_days,
+    neat_compliance_rate
+FROM SV_QLD_HOSPITAL_ACTIVITY
+WHERE admission_financial_year = YEAR(CURRENT_DATE);
+
+💡 KEY BENEFITS
+────────────────────────────────────────────────────────────────────────────
+
+✅ Business-Friendly - Metrics in plain English with Australian terms
+✅ AI-Ready - Works with Cortex Analyst for natural language queries  
+✅ Consistent - One source of truth for all KPIs
+✅ Compliant - Aligned with AIHW and Queensland Health standards
+✅ Integrated - Works with all major BI tools
+✅ Maintainable - Update once, applies everywhere
+
+🎉 READY FOR QUEENSLAND HEALTH DEMONSTRATIONS!
+

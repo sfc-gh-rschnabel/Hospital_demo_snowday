@@ -1,0 +1,241 @@
+bed_id,department_id,room_number,bed_number,bed_type,equipment,is_active,daily_rate
+BED00001,CARD,201,A,Standard,Basic,True,1472
+BED00002,CARD,201,B,ICU,Ventilator,True,1938
+BED00003,CARD,202,A,Standard,Cardiac Monitor,True,1473
+BED00004,CARD,202,B,Private,Dialysis,True,2723
+BED00005,CARD,203,A,Standard,Basic,True,1554
+BED00006,CARD,203,B,Standard,Isolation Equipment,True,1933
+BED00007,CARD,204,A,ICU,Cardiac Monitor,True,2402
+BED00008,CARD,204,B,Semi-Private,Basic,True,1114
+BED00009,CARD,205,A,Private,Basic,True,1112
+BED00010,CARD,205,B,Private,Basic,True,2937
+BED00011,CARD,206,A,Standard,Basic,True,1919
+BED00012,CARD,206,B,Standard,Cardiac Monitor,True,2679
+BED00013,CARD,207,A,Private,Dialysis,True,1311
+BED00014,CARD,207,B,ICU,Ventilator,True,1481
+BED00015,CARD,208,A,Standard,Basic,True,2579
+BED00016,CARD,208,B,Standard,Basic,True,1486
+BED00017,CARD,209,A,Standard,Ventilator,True,2337
+BED00018,CARD,209,B,Standard,Basic,True,1029
+BED00019,CARD,210,A,Standard,Isolation Equipment,True,922
+BED00020,CARD,210,B,Private,Basic,True,1695
+BED00021,CARD,211,A,Standard,Ventilator,True,1267
+BED00022,CARD,211,B,Standard,Ventilator,True,1276
+BED00023,CARD,212,A,Standard,Dialysis,True,1755
+BED00024,CARD,212,B,Private,Ventilator,True,1992
+BED00025,CARD,213,A,Semi-Private,Isolation Equipment,True,2354
+BED00026,CARD,213,B,Standard,Cardiac Monitor,True,2691
+BED00027,CARD,214,A,Standard,Dialysis,True,1768
+BED00028,CARD,214,B,Standard,Isolation Equipment,True,1315
+BED00029,CARD,215,A,Semi-Private,Basic,True,1497
+BED00030,CARD,215,B,ICU,Cardiac Monitor,True,1187
+BED00031,EMER,101,A,ICU,Dialysis,True,2061
+BED00032,EMER,101,B,Standard,Ventilator,True,2267
+BED00033,EMER,102,A,Standard,Ventilator,True,2285
+BED00034,EMER,102,B,Isolation,Basic,True,2195
+BED00035,EMER,103,A,Standard,Basic,True,2603
+BED00036,EMER,103,B,Standard,Isolation Equipment,True,835
+BED00037,EMER,104,A,ICU,Dialysis,True,2298
+BED00038,EMER,104,B,Standard,Basic,True,2831
+BED00039,EMER,105,A,Semi-Private,Isolation Equipment,True,2383
+BED00040,EMER,105,B,ICU,Dialysis,True,1118
+BED00041,EMER,106,A,Private,Isolation Equipment,True,2345
+BED00042,EMER,106,B,Standard,Isolation Equipment,True,1948
+BED00043,EMER,107,A,Private,Dialysis,True,883
+BED00044,EMER,107,B,Standard,Cardiac Monitor,True,2392
+BED00045,ORTH,301,A,ICU,Dialysis,True,895
+BED00046,ORTH,301,B,Isolation,Ventilator,True,2682
+BED00047,ORTH,302,A,Private,Ventilator,True,1039
+BED00048,ORTH,302,B,Standard,Ventilator,True,1270
+BED00049,ORTH,303,A,ICU,Ventilator,True,2232
+BED00050,ORTH,303,B,Standard,Cardiac Monitor,True,2077
+BED00051,ORTH,304,A,Semi-Private,Dialysis,True,1800
+BED00052,ORTH,304,B,Standard,Dialysis,True,967
+BED00053,ORTH,305,A,Semi-Private,Ventilator,True,1119
+BED00054,ORTH,305,B,Standard,Dialysis,True,883
+BED00055,ORTH,306,A,Standard,Basic,True,1228
+BED00056,ORTH,306,B,Standard,Isolation Equipment,True,2853
+BED00057,ORTH,307,A,Semi-Private,Dialysis,True,2168
+BED00058,ORTH,307,B,Standard,Cardiac Monitor,True,2905
+BED00059,ORTH,308,A,Private,Isolation Equipment,True,2514
+BED00060,ORTH,308,B,Standard,Ventilator,True,1492
+BED00061,ORTH,309,A,Private,Dialysis,True,2705
+BED00062,ORTH,309,B,ICU,Ventilator,True,1060
+BED00063,ORTH,310,A,Isolation,Basic,True,2838
+BED00064,ORTH,310,B,Semi-Private,Dialysis,True,1579
+BED00065,ORTH,311,A,Semi-Private,Cardiac Monitor,True,1679
+BED00066,ORTH,311,B,Standard,Cardiac Monitor,True,1923
+BED00067,ORTH,312,A,Private,Ventilator,True,1662
+BED00068,ORTH,312,B,Standard,Basic,True,1140
+BED00069,OBGY,401,A,Private,Isolation Equipment,True,2084
+BED00070,OBGY,401,B,Standard,Isolation Equipment,True,2639
+BED00071,OBGY,402,A,ICU,Isolation Equipment,True,2245
+BED00072,OBGY,402,B,Standard,Dialysis,True,1873
+BED00073,OBGY,403,A,ICU,Dialysis,True,1311
+BED00074,OBGY,403,B,Private,Isolation Equipment,True,1010
+BED00075,OBGY,404,A,Standard,Dialysis,True,2495
+BED00076,OBGY,404,B,Semi-Private,Dialysis,True,1679
+BED00077,OBGY,405,A,Private,Ventilator,True,2623
+BED00078,OBGY,405,B,Standard,Isolation Equipment,True,2024
+BED00079,OBGY,406,A,ICU,Dialysis,True,2162
+BED00080,OBGY,406,B,ICU,Basic,True,1023
+BED00081,OBGY,407,A,Standard,Dialysis,True,950
+BED00082,OBGY,407,B,Private,Cardiac Monitor,True,1090
+BED00083,OBGY,408,A,ICU,Dialysis,True,1618
+BED00084,OBGY,408,B,ICU,Ventilator,True,2885
+BED00085,OBGY,409,A,Standard,Basic,True,1920
+BED00086,OBGY,409,B,Standard,Isolation Equipment,True,1981
+BED00087,OBGY,410,A,Private,Basic,True,2314
+BED00088,OBGY,410,B,Standard,Cardiac Monitor,True,1473
+BED00089,NEUR,501,A,Isolation,Ventilator,True,1907
+BED00090,NEUR,501,B,Isolation,Ventilator,True,2137
+BED00091,NEUR,502,A,Isolation,Ventilator,True,2477
+BED00092,NEUR,502,B,ICU,Isolation Equipment,True,2736
+BED00093,NEUR,503,A,Standard,Ventilator,True,1157
+BED00094,NEUR,503,B,Private,Ventilator,True,2929
+BED00095,NEUR,504,A,ICU,Isolation Equipment,True,1465
+BED00096,NEUR,504,B,Standard,Cardiac Monitor,True,1031
+BED00097,NEUR,505,A,Standard,Ventilator,True,2779
+BED00098,NEUR,505,B,Standard,Isolation Equipment,True,2656
+BED00099,NEUR,506,A,ICU,Basic,True,1367
+BED00100,NEUR,506,B,Standard,Ventilator,True,1083
+BED00101,NEUR,507,A,Standard,Isolation Equipment,True,2117
+BED00102,NEUR,507,B,Standard,Isolation Equipment,True,1581
+BED00103,NEUR,508,A,Semi-Private,Cardiac Monitor,True,2424
+BED00104,NEUR,508,B,Standard,Isolation Equipment,True,2364
+BED00105,NEUR,509,A,Standard,Dialysis,True,842
+BED00106,NEUR,509,B,Standard,Ventilator,True,2869
+BED00107,NEUR,510,A,Standard,Dialysis,True,2340
+BED00108,NEUR,510,B,Semi-Private,Dialysis,True,1710
+BED00109,GAST,301,A,Standard,Isolation Equipment,True,2833
+BED00110,GAST,301,B,Standard,Cardiac Monitor,True,1201
+BED00111,GAST,302,A,Standard,Dialysis,True,1670
+BED00112,GAST,302,B,Standard,Cardiac Monitor,True,1626
+BED00113,GAST,303,A,Standard,Ventilator,True,963
+BED00114,GAST,303,B,Standard,Ventilator,True,2655
+BED00115,GAST,304,A,Semi-Private,Ventilator,True,2846
+BED00116,GAST,304,B,Private,Dialysis,True,1004
+BED00117,GAST,305,A,Private,Basic,True,2841
+BED00118,GAST,305,B,Semi-Private,Basic,True,2101
+BED00119,GAST,306,A,Standard,Cardiac Monitor,True,2478
+BED00120,GAST,306,B,Standard,Isolation Equipment,True,814
+BED00121,GAST,307,A,Standard,Dialysis,True,2296
+BED00122,GAST,307,B,Standard,Isolation Equipment,True,1027
+BED00123,PEDI,201,A,ICU,Cardiac Monitor,True,1136
+BED00124,PEDI,201,B,Standard,Dialysis,True,2945
+BED00125,PEDI,202,A,ICU,Isolation Equipment,True,1819
+BED00126,PEDI,202,B,Semi-Private,Dialysis,True,1645
+BED00127,PEDI,203,A,Semi-Private,Dialysis,True,1522
+BED00128,PEDI,203,B,Semi-Private,Basic,True,2248
+BED00129,PEDI,204,A,ICU,Basic,True,1691
+BED00130,PEDI,204,B,Standard,Basic,True,2246
+BED00131,PEDI,205,A,Standard,Isolation Equipment,True,1486
+BED00132,PEDI,205,B,Standard,Cardiac Monitor,True,2587
+BED00133,PEDI,206,A,ICU,Dialysis,True,1511
+BED00134,PEDI,206,B,Standard,Ventilator,True,1668
+BED00135,PEDI,207,A,Standard,Basic,True,1370
+BED00136,PEDI,207,B,Standard,Isolation Equipment,True,1590
+BED00137,PEDI,208,A,Private,Basic,True,2683
+BED00138,PEDI,208,B,ICU,Dialysis,True,889
+BED00139,PEDI,209,A,Standard,Dialysis,True,1632
+BED00140,PEDI,209,B,Standard,Cardiac Monitor,True,1078
+BED00141,PEDI,210,A,ICU,Basic,True,1368
+BED00142,PEDI,210,B,Standard,Cardiac Monitor,True,2468
+BED00143,PEDI,211,A,Standard,Dialysis,True,1516
+BED00144,PEDI,211,B,Standard,Dialysis,True,2688
+BED00145,PEDI,212,A,Standard,Basic,True,2963
+BED00146,PEDI,212,B,Standard,Isolation Equipment,True,2738
+BED00147,ONCO,401,A,Standard,Dialysis,True,1034
+BED00148,ONCO,401,B,Private,Cardiac Monitor,True,1597
+BED00149,ONCO,402,A,Private,Dialysis,True,2539
+BED00150,ONCO,402,B,Standard,Cardiac Monitor,True,2275
+BED00151,ONCO,403,A,Standard,Basic,True,2630
+BED00152,ONCO,403,B,Standard,Dialysis,True,960
+BED00153,ONCO,404,A,Semi-Private,Basic,True,2488
+BED00154,ONCO,404,B,Standard,Isolation Equipment,True,2854
+BED00155,ONCO,405,A,Standard,Basic,True,1860
+BED00156,ONCO,405,B,Standard,Ventilator,True,2174
+BED00157,ONCO,406,A,Private,Dialysis,True,2289
+BED00158,ONCO,406,B,ICU,Basic,True,1423
+BED00159,ONCO,407,A,Standard,Basic,True,1535
+BED00160,ONCO,407,B,Standard,Basic,True,1096
+BED00161,ONCO,408,A,Semi-Private,Ventilator,True,2633
+BED00162,ONCO,408,B,Semi-Private,Cardiac Monitor,True,2827
+BED00163,ONCO,409,A,Private,Dialysis,True,1133
+BED00164,ONCO,409,B,Private,Dialysis,True,909
+BED00165,ONCO,410,A,Standard,Ventilator,True,2821
+BED00166,ONCO,410,B,Semi-Private,Ventilator,True,2242
+BED00167,PSYC,101,A,Standard,Dialysis,True,2523
+BED00168,PSYC,101,B,Semi-Private,Ventilator,True,2393
+BED00169,PSYC,102,A,Private,Basic,True,1747
+BED00170,PSYC,102,B,Standard,Isolation Equipment,True,1725
+BED00171,PSYC,103,A,Standard,Basic,True,2639
+BED00172,PSYC,103,B,ICU,Dialysis,True,1463
+BED00173,PSYC,104,A,Semi-Private,Ventilator,True,1365
+BED00174,PSYC,104,B,Private,Isolation Equipment,True,1747
+BED00175,PSYC,105,A,Semi-Private,Dialysis,True,2377
+BED00176,PSYC,105,B,Standard,Dialysis,True,1998
+BED00177,PULM,301,A,ICU,Dialysis,True,1553
+BED00178,PULM,301,B,Standard,Basic,True,868
+BED00179,PULM,302,A,Standard,Ventilator,True,1196
+BED00180,PULM,302,B,Private,Cardiac Monitor,True,1247
+BED00181,PULM,303,A,ICU,Basic,True,2178
+BED00182,PULM,303,B,ICU,Basic,True,1534
+BED00183,PULM,304,A,Standard,Ventilator,True,1320
+BED00184,PULM,304,B,Isolation,Ventilator,True,2998
+BED00185,PULM,305,A,Standard,Cardiac Monitor,True,1506
+BED00186,PULM,305,B,Standard,Basic,True,2785
+BED00187,PULM,306,A,ICU,Isolation Equipment,True,2453
+BED00188,PULM,306,B,Standard,Basic,True,2426
+BED00189,PULM,307,A,Semi-Private,Dialysis,True,2971
+BED00190,PULM,307,B,Standard,Cardiac Monitor,True,2711
+BED00191,PULM,308,A,Semi-Private,Basic,True,2426
+BED00192,PULM,308,B,Standard,Basic,True,1930
+BED00193,PULM,309,A,Semi-Private,Cardiac Monitor,True,1554
+BED00194,PULM,309,B,Standard,Basic,True,1383
+BED00195,ENDO,201,A,Standard,Cardiac Monitor,True,2505
+BED00196,ENDO,201,B,Standard,Dialysis,True,1884
+BED00197,ENDO,202,A,Standard,Ventilator,True,1482
+BED00198,ENDO,202,B,Private,Basic,True,2776
+BED00199,ENDO,203,A,Standard,Dialysis,True,1806
+BED00200,ENDO,203,B,Standard,Cardiac Monitor,True,1512
+BED00201,ENDO,204,A,Private,Cardiac Monitor,True,2752
+BED00202,ENDO,204,B,Standard,Dialysis,True,1454
+BED00203,ENDO,205,A,ICU,Cardiac Monitor,True,2780
+BED00204,ENDO,205,B,Standard,Isolation Equipment,True,932
+BED00205,ENDO,206,A,Standard,Isolation Equipment,True,1331
+BED00206,ENDO,206,B,Standard,Cardiac Monitor,True,1002
+BED00207,DERM,101,A,Semi-Private,Isolation Equipment,True,2483
+BED00208,DERM,101,B,Private,Cardiac Monitor,True,832
+BED00209,DERM,102,A,Private,Ventilator,True,1244
+BED00210,DERM,102,B,Standard,Dialysis,True,826
+BED00211,DERM,103,A,Standard,Dialysis,True,2442
+BED00212,DERM,103,B,Semi-Private,Cardiac Monitor,True,1201
+BED00213,DERM,104,A,Standard,Isolation Equipment,True,2833
+BED00214,DERM,104,B,ICU,Dialysis,True,2173
+BED00215,UROL,301,A,Standard,Ventilator,True,1030
+BED00216,UROL,301,B,Semi-Private,Ventilator,True,2494
+BED00217,UROL,302,A,Isolation,Basic,True,818
+BED00218,UROL,302,B,Isolation,Cardiac Monitor,True,1593
+BED00219,UROL,303,A,Isolation,Cardiac Monitor,True,1296
+BED00220,UROL,303,B,Private,Ventilator,True,2231
+BED00221,UROL,304,A,Semi-Private,Cardiac Monitor,True,2859
+BED00222,UROL,304,B,Standard,Isolation Equipment,True,1778
+BED00223,UROL,305,A,Semi-Private,Dialysis,True,1812
+BED00224,UROL,305,B,Standard,Ventilator,True,2809
+BED00225,UROL,306,A,Semi-Private,Cardiac Monitor,True,2173
+BED00226,UROL,306,B,Standard,Isolation Equipment,True,1696
+BED00227,UROL,307,A,Standard,Isolation Equipment,True,1573
+BED00228,UROL,307,B,ICU,Dialysis,True,1610
+BED00229,UROL,308,A,Standard,Ventilator,True,2067
+BED00230,UROL,308,B,Standard,Cardiac Monitor,True,1617
+BED00231,RHEU,201,A,Standard,Dialysis,True,904
+BED00232,RHEU,201,B,Standard,Dialysis,True,1172
+BED00233,RHEU,202,A,Standard,Basic,True,2748
+BED00234,RHEU,202,B,Standard,Dialysis,True,2258
+BED00235,RHEU,203,A,Standard,Cardiac Monitor,True,1391
+BED00236,RHEU,203,B,Standard,Ventilator,True,1278
+BED00237,RHEU,204,A,Standard,Cardiac Monitor,True,1986
+BED00238,RHEU,204,B,Private,Ventilator,True,2405
+BED00239,RHEU,205,A,Standard,Isolation Equipment,True,1389
+BED00240,RHEU,205,B,Isolation,Ventilator,True,1978
