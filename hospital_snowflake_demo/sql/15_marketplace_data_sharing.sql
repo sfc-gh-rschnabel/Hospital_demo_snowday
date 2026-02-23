@@ -154,11 +154,11 @@ WITH weather_au AS (
 SELECT 
     -- Admission data
     a.admission_date,
-    a.department_code,
+    a.department_id,
     d.department_name,
     a.admission_type,
-    a.primary_diagnosis,
-    a.length_of_stay_days,
+    a.diagnosis_primary,
+    DATEDIFF(day, a.admission_date, COALESCE(a.discharge_date, CURRENT_DATE)) AS length_of_stay_days,
     a.total_charges,
     
     -- Weather data (from Weather Source Marketplace)
@@ -194,7 +194,7 @@ SELECT
     END AS sky_condition_category
 
 FROM RAW_DATA.PATIENT_ADMISSIONS_RAW a
-JOIN RAW_DATA.HOSPITAL_DEPARTMENTS_RAW d ON a.department_code = d.department_id
+JOIN RAW_DATA.HOSPITAL_DEPARTMENTS_RAW d ON a.department_id = d.department_id
 LEFT JOIN weather_au w ON a.admission_date = w.weather_date;
 
 -- =============================================================================
@@ -208,7 +208,7 @@ CREATE OR REPLACE VIEW ANALYTICS.V_WEATHER_ADMISSION_CORRELATION AS
 SELECT 
     weather_condition,
     temperature_category,
-    air_quality_category,
+    sky_condition_category,
     
     -- Admission metrics
     COUNT(*) AS total_admissions,
@@ -216,7 +216,7 @@ SELECT
     ROUND(COUNT(*) / COUNT(DISTINCT admission_date), 1) AS avg_daily_admissions,
     
     -- Department breakdown for respiratory-related admissions
-    SUM(CASE WHEN department_code IN ('EMER', 'CARD', 'NEUR') THEN 1 ELSE 0 END) AS critical_dept_admissions,
+    SUM(CASE WHEN department_id IN ('EMER', 'CARD', 'NEUR') THEN 1 ELSE 0 END) AS critical_dept_admissions,
     
     -- Financial impact
     ROUND(AVG(total_charges), 2) AS avg_charges_per_admission,
@@ -230,7 +230,7 @@ SELECT
 
 FROM ANALYTICS.V_ADMISSIONS_WEATHER_ANALYSIS
 WHERE admission_date >= '2023-01-01'
-GROUP BY weather_condition, temperature_category, air_quality_category
+GROUP BY weather_condition, temperature_category, sky_condition_category
 ORDER BY total_admissions DESC;
 
 -- =============================================================================
@@ -245,12 +245,13 @@ SELECT
     admission_date,
     weather_condition,
     avg_temperature_c,
-    air_quality_index,
+    cloud_cover_pct,
     COUNT(*) AS admissions,
     SUM(CASE WHEN admission_type = 'Emergency' THEN 1 ELSE 0 END) AS emergency_admissions,
     ROUND(AVG(total_charges), 2) AS avg_charges
 FROM ANALYTICS.V_ADMISSIONS_WEATHER_ANALYSIS
-GROUP BY admission_date, weather_condition, avg_temperature_c, air_quality_index
+    where temperature_category is not null
+GROUP BY admission_date, weather_condition, avg_temperature_c, cloud_cover_pct
 ORDER BY admission_date DESC
 LIMIT 30;
 
