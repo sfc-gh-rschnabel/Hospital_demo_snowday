@@ -32,7 +32,7 @@
 -- 5. The shared database will appear in your account instantly (zero-copy!)
 --
 -- For this demo, we'll use the common naming pattern from Weather Source:
--- Database: WEATHER_SOURCE_LLC__FROSTBYTE
+-- Database: WEATHER_SOURCE_LLC_FROSTBYTE
 -- 
 -- Alternative: If Weather Source isn't available, search for any weather
 -- dataset - the SQL below can be adapted to match the schema.
@@ -49,11 +49,16 @@ USE WAREHOUSE HOSPITAL_ANALYTICS_WH;
 -- (Uncomment and modify based on your actual Marketplace database name)
 
 /*
--- List available schemas
-SHOW SCHEMAS IN DATABASE WEATHER_SOURCE_LLC__FROSTBYTE;
+use database WEATHER_SOURCE_LLC_FROSTBYTE;
+SHOW SCHEMAS in database WEATHER_SOURCE_LLC_FROSTBYTE;
+
+use schema ONPOINT_ID;
+SHOW VIEWS IN SCHEMA HOSPITAL_DEMO.ANALYTICS;
+
 
 -- List tables in the database
-SHOW TABLES IN DATABASE WEATHER_SOURCE_LLC__FROSTBYTE;
+SHOW VIEWS;
+
 
 -- Preview the weather data structure
 SELECT * FROM WEATHER_SOURCE_LLC__FROSTBYTE.ONPOINT_ID.HISTORY_DAY LIMIT 10;
@@ -118,8 +123,34 @@ SELECT * FROM SAMPLE_WEATHER_DATA ORDER BY weather_date DESC LIMIT 10;
 
 USE SCHEMA ANALYTICS;
 
--- Create analytical view joining hospital admissions with weather data
+-- Create analytical view joining hospital admissions with Weather Source Marketplace data
 CREATE OR REPLACE VIEW ANALYTICS.V_ADMISSIONS_WEATHER_ANALYSIS AS
+WITH weather_au AS (
+    -- Aggregate Weather Source forecast data for Australia (Sydney as proxy)
+    SELECT 
+        DATE_VALID_STD AS weather_date,
+        CITY_NAME AS city,
+        COUNTRY,
+        -- Convert Fahrenheit to Celsius
+        ROUND((AVG_TEMPERATURE_AIR_2M_F - 32) * 5/9, 1) AS avg_temperature_c,
+        ROUND((MIN_TEMPERATURE_AIR_2M_F - 32) * 5/9, 1) AS min_temperature_c,
+        ROUND((MAX_TEMPERATURE_AIR_2M_F - 32) * 5/9, 1) AS max_temperature_c,
+        ROUND(AVG_HUMIDITY_RELATIVE_2M_PCT, 0) AS avg_humidity_pct,
+        -- Convert inches to mm
+        ROUND(TOT_PRECIPITATION_IN * 25.4, 1) AS precipitation_mm,
+        AVG_CLOUD_COVER_TOT_PCT AS cloud_cover_pct,
+        PROBABILITY_OF_PRECIPITATION_PCT AS precip_probability,
+        -- Derive weather condition from cloud cover and precipitation
+        CASE 
+            WHEN TOT_PRECIPITATION_IN > 0.2 THEN 'Rainy'
+            WHEN AVG_CLOUD_COVER_TOT_PCT > 80 THEN 'Cloudy'
+            WHEN AVG_CLOUD_COVER_TOT_PCT > 40 THEN 'Partly Cloudy'
+            ELSE 'Sunny'
+        END AS weather_condition
+    FROM WEATHER_SOURCE_LLC_FROSTBYTE.ONPOINT_ID.FORECAST_DAY
+    WHERE COUNTRY = 'AU'
+      AND CITY_NAME = 'Sydney'
+)
 SELECT 
     -- Admission data
     a.admission_date,
@@ -130,13 +161,14 @@ SELECT
     a.length_of_stay_days,
     a.total_charges,
     
-    -- Weather data (from Marketplace or simulated)
+    -- Weather data (from Weather Source Marketplace)
     w.avg_temperature_c,
     w.min_temperature_c,
     w.max_temperature_c,
     w.avg_humidity_pct,
     w.precipitation_mm,
-    w.air_quality_index,
+    w.cloud_cover_pct,
+    w.precip_probability,
     w.weather_condition,
     
     -- Derived weather categories for analysis
@@ -155,14 +187,15 @@ SELECT
     END AS precipitation_category,
     
     CASE 
-        WHEN w.air_quality_index > 100 THEN 'Poor AQI'
-        WHEN w.air_quality_index > 50 THEN 'Moderate AQI'
-        ELSE 'Good AQI'
-    END AS air_quality_category
+        WHEN w.cloud_cover_pct > 80 THEN 'Overcast'
+        WHEN w.cloud_cover_pct > 50 THEN 'Cloudy'
+        WHEN w.cloud_cover_pct > 20 THEN 'Partly Cloudy'
+        ELSE 'Clear'
+    END AS sky_condition_category
 
 FROM RAW_DATA.PATIENT_ADMISSIONS_RAW a
-JOIN RAW_DATA.HOSPITAL_DEPARTMENTS_RAW d ON a.department_code = d.department_code
-LEFT JOIN MARKETPLACE_DATA.SAMPLE_WEATHER_DATA w ON a.admission_date = w.weather_date;
+JOIN RAW_DATA.HOSPITAL_DEPARTMENTS_RAW d ON a.department_code = d.department_id
+LEFT JOIN weather_au w ON a.admission_date = w.weather_date;
 
 -- =============================================================================
 -- STEP 5: ANALYTICAL QUERY - WEATHER IMPACT ON ADMISSIONS
