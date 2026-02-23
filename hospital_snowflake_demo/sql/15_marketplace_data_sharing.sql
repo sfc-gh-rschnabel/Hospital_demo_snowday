@@ -61,7 +61,7 @@ SHOW VIEWS;
 
 
 -- Preview the weather data structure
-SELECT * FROM WEATHER_SOURCE_LLC__FROSTBYTE.ONPOINT_ID.HISTORY_DAY LIMIT 10;
+SELECT * FROM WEATHER_SOURCE_LLC_FROSTBYTE.ONPOINT_ID.HISTORY_DAY LIMIT 10;
 */
 
 -- =============================================================================
