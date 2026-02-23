@@ -330,11 +330,7 @@ def main():
                            title="Insurance Provider Distribution", color_discrete_sequence=px.colors.qualitative.Set3)
                 st.plotly_chart(fig, use_container_width=True)
             with col2:
-                st.dataframe(insurance_data, column_config={
-                    'INSURANCE_PROVIDER': st.column_config.TextColumn('Insurance Provider'),
-                    'PATIENT_COUNT': st.column_config.NumberColumn('Patients', format="%d"),
-                    'PERCENTAGE': st.column_config.NumberColumn('Share %', format="%.1f%%")
-                }, use_container_width=True, hide_index=True)
+                st.dataframe(insurance_data, use_container_width=True)
     
     # Clinical Administrator Dashboard
     elif user_role == "Clinical Administrator":
@@ -364,26 +360,13 @@ def main():
                 fig.update_xaxes(tickangle=45)
                 st.plotly_chart(fig, use_container_width=True)
             with col2:
-                st.dataframe(bed_data, column_config={
-                    'DEPARTMENT_NAME': st.column_config.TextColumn('Department'),
-                    'TOTAL_BEDS': st.column_config.NumberColumn('Total Beds'),
-                    'OCCUPIED_BEDS': st.column_config.NumberColumn('Occupied'),
-                    'AVAILABLE_BEDS': st.column_config.NumberColumn('Available'),
-                    'UTILIZATION_RATE': st.column_config.NumberColumn('Utilization %', format="%.1f%%")
-                }, use_container_width=True, hide_index=True)
+                st.dataframe(bed_data, use_container_width=True)
         
         # Department Details
         st.markdown('<h2 class="section-header">📋 Department Details</h2>', unsafe_allow_html=True)
         dept_data = get_department_summary(str(start_date), str(end_date))
         if not dept_data.empty:
-            st.dataframe(dept_data, column_config={
-                'DEPARTMENT_NAME': st.column_config.TextColumn('Department'),
-                'SPECIALIZATION_TYPE': st.column_config.TextColumn('Specialization'),
-                'ADMISSIONS': st.column_config.NumberColumn('Admissions'),
-                'TOTAL_REVENUE': st.column_config.NumberColumn('Revenue', format="$%,.0f"),
-                'AVG_CHARGES': st.column_config.NumberColumn('Avg Charges', format="$%,.0f"),
-                'PROCEDURES': st.column_config.NumberColumn('Procedures')
-            }, use_container_width=True, hide_index=True)
+            st.dataframe(dept_data, use_container_width=True)
     
     # Physician Dashboard
     elif user_role == "Physician":
@@ -421,12 +404,7 @@ def main():
                 fig.update_xaxes(tickangle=45)
                 st.plotly_chart(fig, use_container_width=True)
             with col2:
-                st.dataframe(med_data, column_config={
-                    'THERAPEUTIC_CATEGORY': st.column_config.TextColumn('Category'),
-                    'TOTAL_ORDERS': st.column_config.NumberColumn('Orders'),
-                    'TOTAL_COST': st.column_config.NumberColumn('Total Cost', format="$%,.0f"),
-                    'UNIQUE_PATIENTS': st.column_config.NumberColumn('Patients')
-                }, use_container_width=True, hide_index=True)
+                st.dataframe(med_data, use_container_width=True)
     
     # Nurse Dashboard
     elif user_role == "Nurse":
@@ -457,13 +435,7 @@ def main():
             with col3:
                 create_metric_card("Available", f"{available}", f"{available/total_beds*100:.1f}%", "🟢")
             
-            st.dataframe(bed_data, column_config={
-                'DEPARTMENT_NAME': st.column_config.TextColumn('Department'),
-                'TOTAL_BEDS': st.column_config.NumberColumn('Total'),
-                'OCCUPIED_BEDS': st.column_config.NumberColumn('Occupied'),
-                'AVAILABLE_BEDS': st.column_config.NumberColumn('Available'),
-                'UTILIZATION_RATE': st.column_config.NumberColumn('Utilization %', format="%.1f%%")
-            }, use_container_width=True, hide_index=True)
+            st.dataframe(bed_data, use_container_width=True)
     
     # Analyst Dashboard
     elif user_role == "Analyst":
